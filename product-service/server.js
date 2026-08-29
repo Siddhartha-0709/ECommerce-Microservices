@@ -31,7 +31,7 @@ mongoose.connect(MONGO_URI)
 // Health Endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({
-    status: 'ok',
+    status: 'ok everything is working fine',
     service: 'product-service'
   });
 });
