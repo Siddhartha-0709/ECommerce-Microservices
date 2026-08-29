@@ -61,6 +61,8 @@ docker-compose up --build
 ```
 
 ### 2. React Frontend
+Clone the Frontend Repo from the GitHub Repo - [ECommerce FrontEnd](https://github.com/Siddhartha-0709/ECommerce-Frontend)
+
 Navigate to the frontend directory and start the development server:
 ```bash
 cd frontend
@@ -88,5 +90,7 @@ All backend services are designed to be Kubernetes-ready:
 ## Disclaimer
 
 **The authentication implementation is for learning/demo purposes only and is NOT production secure.**
-</task_progress>
-</write_to_file>
+
+I have kept it deliberately simple and easy for learning purpose.
+
+Happy Learning!!
