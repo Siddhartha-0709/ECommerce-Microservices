@@ -1,4 +1,4 @@
-// Product Service - server.js
+// Product Service - server.js update
 
 const express = require('express');
 const mongoose = require('mongoose');

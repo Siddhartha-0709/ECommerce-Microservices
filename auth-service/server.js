@@ -1,4 +1,4 @@
-// Auth Service - server.js
+// Auth Service - server.js update
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
