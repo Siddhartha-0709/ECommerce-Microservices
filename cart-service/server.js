@@ -169,18 +169,6 @@ app.delete('/api/cart/:userId/clear', async (req, res) => {
   }
 });
 
-// Seed Function
-async function seedCart() {
-  const count = await Cart.countDocuments();
-  if (count === 0) {
-    console.log('Seeding initial cart data...');
-    // No initial cart data needed for demo
-    console.log('Cart service ready');
-  }
-}
-
-seedCart().catch(err => console.error('Error seeding cart data:', err));
-
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Cart Service running on port ${PORT} (listening on 0.0.0.0)`);
 });

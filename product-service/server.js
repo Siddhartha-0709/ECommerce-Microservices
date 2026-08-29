@@ -79,7 +79,7 @@ app.put('/api/products/:id', async (req, res) => {
       { new: true, runValidators: true }
     );
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: 'Product not found in database' });
     }
     res.status(200).json(product);
   } catch (error) {

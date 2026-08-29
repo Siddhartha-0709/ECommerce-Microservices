@@ -100,10 +100,9 @@ app.get('/api/users', async (req, res) => {
 async function seedUsers() {
   const count = await User.countDocuments();
   if (count === 0) {
-    console.log('Seeding initial users...');
+    console.log('Seeding Admin user...');
     await User.insertMany([
       { email: 'admin@example.com', password: 'admin', name: 'Admin', role: 'admin' },
-      { email: 'user@example.com', password: 'password', name: 'Demo User', role: 'user' }
     ]);
     console.log('Users seeded successfully');
   }

@@ -143,18 +143,6 @@ app.get('/api/orders/:userId/:orderId', async (req, res) => {
   }
 });
 
-// Seed Function
-async function seedOrders() {
-  const count = await Order.countDocuments();
-  if (count === 0) {
-    console.log('Seeding initial orders...');
-    // No initial orders needed for demo
-    console.log('Order service ready');
-  }
-}
-
-seedOrders().catch(err => console.error('Error seeding orders data:', err));
-
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Order Service running on port ${PORT} (listening on 0.0.0.0)`);
 });
